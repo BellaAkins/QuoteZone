@@ -9,13 +9,25 @@
   <body>
     <div class="container">
       <h2>QuoteZone</h2>
-      <blockquote id="quote"></blockquote>
-      <span id="author"></span>
+      <blockquote id="quote">quote</blockquote>
+      <span id="author">author</span>
+
+      <select id="category">
+        <option value="all">All</option>
+        <option value="faith">Faith</option>
+        <option value="love">Love</option>
+        <option value="wisdom">Wisdom</option>
+      </select>
+
       <div class="postquote">
         <button id="new-quote">New Quote</button>
+        <button id="post">Post</button>
       </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="quote.js"></script>
+    <!--
+     <script src="script.js"></script>
+ -->
   </body>
 </html>
