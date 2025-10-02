@@ -1,12 +1,7 @@
 const quoteEl = document.getElementById("quote");
 const authorEl = document.getElementById("author");
 const quoteBtn = document.getElementById("new-quote");
-<<<<<<< HEAD
-const postBtn = document.getElementById("post");
-const api_url = "https://api.quotable.io/random";
-=======
 const api_url = "https://dummyjson.com/quotes";
->>>>>>> b4c68ab27c11936f695032be5f52796a93554a18
 
 async function getQuote(url) {
   const response = await fetch(url);
@@ -28,6 +23,7 @@ getQuote(api_url);
 quoteBtn.addEventListener("click", () => {
   getQuote(api_url);
 });
+
 postBtn.addEventListener("click", () => {
   tweet();
 });
